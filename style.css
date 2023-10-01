@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #FFF;
+
+  font-family: K2D;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: 600px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 50px;
+  border: 10px solid #828282;
+  background: #222;
+}
+
+h1 {
+  color: #FFC600;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h1 span {
+  color: #FF4320;
+}
+
+h1,
+.foundation {
+  text-align: center;
+}
+
+.time {
+color:#222;
+  margin: 56px 55px 0 auto;
+}
+
+.foundation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.foundation::after {
+  display: block;
+  content: "";
+  background-color: #FFF;
+  width: 230px;
+  height: 10px;
+  border-radius: 1px;
+  margin: 12px 0 40px;
+
+}
+
+.lines {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 47%;
+  left: 50%;
+}
+
+.green-txt,
+.blue-txt,
+.purple-txt {
+  top: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.green-txt {
+  color: #00D674;
+  font-size: 20px;
+  font-weight: 700;
+  left: 27px;
+}
+
+.purple-txt {
+  color: #7255EE;
+  font-size: 20px;
+  font-weight: 700;
+  right: 52px;
+}
+
+.blue-txt {
+  color: #2F96FD;
+  font-size: 20px;
+  font-weight: 700;
+  right: 40px;
+}
+
+.green,
+.blue,
+.purple {
+  position: absolute;
+}
+
+.green-img1,
+.purple-img1,
+.blue-img1 {
+  position: relative;
+  z-index: 1;
+}
+
+.green-img2,
+.purple-img2,
+.blue-img2 {
+  position: absolute;
+  margin-left: auto;
+  z-index: 2;
+}
+
+.green-img1 {
+  background-image: url(./assets/green1.svg);
+  width: 450px;
+  height: 450px;
+}
+
+.purple-img1 {
+  background-image: url(./assets/purple1.svg);
+  width: 400px;
+  height: 400px;
+}
+
+.blue-img1 {
+  background-image: url(./assets/blue1.svg);
+  width: 350px;
+  height: 350px;
+}
+
+.green-img2 {
+  background-image: url(./assets/green2.svg);
+  background-repeat: no-repeat;
+  top: 37px;
+  left: 2px;
+  width: 450px;
+  height: 450px;
+}
+
+.purple-img2 {
+  top: 29px;
+  left: 123px;
+  background-image: url(./assets/purple2.svg);
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 400px;
+}
+
+.blue-img2 {
+  background-image: url(./assets/blue2.svg);
+  background-repeat: no-repeat;
+  left: 171px;
+
+  width: 350px;
+  height: 350px;
+}
